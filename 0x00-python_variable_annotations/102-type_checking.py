@@ -3,8 +3,7 @@
 from typing import Any, List, Tuple, Sequence
 
 
-def zoom_array(lst: Tuple, factor: int = 2
-               ) -> List:
+def zoom_array(lst: Tuple, factor: int = 2) -> List:
     """ Factors list of numbers """
     factor = int(factor) if isinstance(factor, float) else factor
     zoomed_in: List = [
@@ -14,8 +13,8 @@ def zoom_array(lst: Tuple, factor: int = 2
     return zoomed_in
 
 
-array = [12, 72, 91]
+array = (12, 72, 91)
 
 zoom_2x = zoom_array(array)
 
-zoom_3x = zoom_array(array, 3.0)
+zoom_3x = zoom_array(array, 3)
