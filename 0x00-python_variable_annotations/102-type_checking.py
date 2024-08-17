@@ -1,10 +1,10 @@
 #!/usr/bin/env python3
 """ Implements functions that factors a list of numbers """
-from typing import Any, List, Union, Sequence
+from typing import Any, List, Tuple, Sequence
 
 
-def zoom_array(lst: Sequence, factor: Union[int, float] = 2
-               ) -> List[Union[int, float]]:
+def zoom_array(lst: Tuple, factor: int = 2
+               ) -> List:
     """ Factors list of numbers """
     factor = int(factor) if isinstance(factor, float) else factor
     zoomed_in: List = [
